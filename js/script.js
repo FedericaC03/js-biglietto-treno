@@ -8,7 +8,10 @@ var prezzoxkm = km * 0.21;
 
 //VERIFICO SE L'UTENTE E' MINORENNE E APPLICO LO SCONTO DEL 20%
 // SE L'UTENTE E' OVER 65 APPLICO LO SCONTO DEL 40% ALTRIMENTI UN PREZZO NORMALE
-if (eta < 18) {
+if (isNaN(km) || isNaN(eta)) {
+  alert("Devi inserire un numero");
+}
+else if (eta < 18) {
   document.getElementById('prezzo').innerHTML = ((prezzoxkm * 20) / 100);
 }
 else if (eta > 65) {
