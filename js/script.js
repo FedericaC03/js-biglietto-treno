@@ -12,10 +12,10 @@ if (isNaN(km) || isNaN(eta)) {
   alert("Devi inserire un numero");
 }
 else if (eta <= 18) {
-  document.getElementById('prezzo').innerHTML = Math.floor(((prezzoxkm - ((prezzoxkm * 20) / 100)))).toFixed(2);
+  document.getElementById('prezzo').innerHTML = ((prezzoxkm - ((prezzoxkm * 20) / 100))).toFixed(2);
 }
 else if (eta >= 65) {
-  document.getElementById('prezzo').innerHTML = Math.floor(((prezzoxkm - ((prezzoxkm * 40) / 100)))).toFixed(2);
+  document.getElementById('prezzo').innerHTML = ((prezzoxkm - ((prezzoxkm * 40) / 100))).toFixed(2);
 }
 else {
   document.getElementById('prezzo').innerHTML = (prezzoxkm ).toFixed(2);
